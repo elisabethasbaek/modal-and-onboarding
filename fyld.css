@@ -1,0 +1,15 @@
+.fyld{
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hotpink;
+}
+
+.fyld li{
+    list-style-type: none;
+}
+
+.fyld div{
+    display: grid;
+    justify-items: center;
+}
