@@ -45,7 +45,11 @@ function step(tooltipText, xCoord, yCoord){
     window.localStorage.setItem("currentStep", parseInt(window.localStorage.getItem("currentStep") || 0) + 1);
 } // STEP function end
 
-step("Click to see a single Fuck", "47vw", "45vh");
+if(window.localStorage.getItem("onboardingCompleted") != "true"){
+    step("Click to see a single Fuck", "47vw", "45vh");
+} else{
+    onboardingOverlay.remove();
+}
 
 nextButton.addEventListener("click", function(){
     var currentStep = window.localStorage.getItem("currentStep");
@@ -58,7 +62,17 @@ nextButton.addEventListener("click", function(){
     if(currentStep == "2"){
         step("Click to see a double Ugh", "45vw", "20vh");
     }
-})
+
+    if(currentStep == "3"){
+        window.localStorage.setItem("onboardingCompleted", "true");
+        onboardingOverlay.remove();
+    }
+});
+
+skipButton.addEventListener("click", function(){
+    window.localStorage.setItem("onboardingCompleted", "true");
+    onboardingOverlay.remove();
+});
 
 function removeContent(){
     content.removeChild(content.children[0]);

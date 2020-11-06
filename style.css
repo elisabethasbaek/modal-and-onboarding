@@ -1,3 +1,8 @@
 @import "/modal.css";
 @import "/onboarding.css";
 @import "/fyld.css";
+
+img{
+    width: 570px;
+    height: 650px;
+}
