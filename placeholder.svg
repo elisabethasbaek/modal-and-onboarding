@@ -1,7 +1,7 @@
 <svg 
     version="1.1" 
     xmlns="http://www.w3.org/2000/svg" 
-    viewbox="0 0 850 700" 
+    viewBox="0 0 600 650" 
     width="100%" 
     height="auto" >
 
@@ -20,7 +20,8 @@
         transform="rotate(-5 300,600)"
         fill="#3D3D3D"
         font-weight="bold"
-        font-size="3.2rem">   
+        font-size="3.2rem">
+
         Mount Fuji
     </text> 
 
